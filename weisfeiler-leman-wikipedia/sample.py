@@ -3,6 +3,18 @@ g5_01 = {0: {3, 4}, 1: {2, 3, 4}, 2: {1, 3}, 3: {0, 1, 2}, 4: {0, 1}}
 g5_02 = {0: {1, 2, 4}, 1: {0, 3}, 2: {0, 3}, 3: {1, 2, 4}, 4: {0, 3}}
 
 
+# Uncomment this to compare g5_00 to g5_01
+# g0 = g5_00
+# g1 = g5_01
+
+# Uncomment this to compare g5_00 to g5_02
+# g0 = g5_00
+# g1 = g5_02
+
+# Uncomment this to compare g5_01 to g5_02
+g0 = g5_01
+g1 = g5_02
+
 def combineTwo(g1, g2):
     g = {}
     n = len(g1)
@@ -19,7 +31,7 @@ def combineTwo(g1, g2):
     return g
 
 
-g = combineTwo(g5_00, g5_02)
+g = combineTwo(g0, g1)
 labels = {}
 glabels = {}
 for i in range(len(g)):
