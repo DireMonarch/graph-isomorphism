@@ -52,18 +52,18 @@ while not (done):
 print(glabels)
 
 g0labels = []
-for i in range(len(g0)):
+for i in range(len(g5_00)):
     g0labels.append(glabels[i])
 g0labels.sort()
 certificate0 = ""
-for i in range(len(g0)):
+for i in range(len(g5_00)):
     certificate0 += str(g0labels[i]) + "_"
 g1labels = []
-for i in range(len(g1)):
-    g1labels.append(glabels[i + len(g0)])
+for i in range(len(g5_01)):
+    g1labels.append(glabels[i + len(g5_00)])
 g1labels.sort()
 certificate1 = ""
-for i in range(len(g1)):
+for i in range(len(g5_01)):
     certificate1 += str(g1labels[i]) + "_"
 
 if certificate0 == certificate1:
