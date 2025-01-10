@@ -33,7 +33,7 @@ def combine_graphs(g1, g2):
     return g
 
 
-def weisfeiler_leman(g0, g1):
+def weisfeiler_leman_1(g0, g1):
     """Executes the Weisfeiler-Leman algoright on graphs g1 and g2
         returns a tuple of the certificates (hashes of colors)
     """
@@ -93,6 +93,6 @@ def weisfeiler_leman(g0, g1):
 
 
 for a, b in ((g5_00, g5_01), (g5_00, g5_02), (g5_01, g5_02)):
-    cert0, cert1 = weisfeiler_leman(a, b)
+    cert0, cert1 = weisfeiler_leman_1(a, b)
     print(cert0)
     print(cert1)
